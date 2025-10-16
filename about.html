@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Mwangolo Fredrick Karimah</title>
+  <style>
+    /* ================= Variables ================= */
+    :root {
+      --primary-color: #7e37d7;
+      --secondary-color: #00aeff;
+      --background-color: #1a1a2e;
+      --text-color: #e0e0e0;
+      --card-background: #2a2a3e;
+      --button-gradient: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    /* ================= Navbar ================= */
+    header {
+      background-color: rgba(26, 26, 46, 0.8);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      color: var(--text-color);
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: var(--primary-color);
+    }
+
+    /* ================= About Section ================= */
+    .about-split {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 10%;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    .about-text {
+      flex: 1;
+      max-width: 600px;
+      padding-right: 40px;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    .about-text.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .about-text h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      background: var(--button-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .about-text p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #ccc;
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      color: var(--primary-color);
+    }
+
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 350px;
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      object-fit: cover;
+      filter: grayscale(100%);
+      transition: filter 0.5s ease;
+    }
+
+    .about-image img:hover {
+      filter: grayscale(0%);
+    }
+
+    /* ================= Footer ================= */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 4rem;
+      border-top: 1px solid #333;
+      background-color: #111;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 900px) {
+      .about-split {
+        flex-direction: column;
+        text-align: center;
+      }
+      .about-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+      .about-image img {
+        width: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <nav>
+      <div class="logo">Mwangolo.</div>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-split">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        I am passionate about using data to solve real-world problems and support better decision-making. 
+        My journey began with Python and grew into a focus on data analysis and storytelling, where I gained 
+        strong skills in <strong>pandas</strong>, <strong>NumPy</strong>, <strong>SQL</strong>, and <strong>Excel</strong>.
+      </p>
+      <p>
+        I enjoy turning raw data into insights through visualization tools like <strong>Matplotlib</strong> and 
+        <strong>Seaborn</strong>, and I’ve completed projects involving data cleaning, exploration, and visualization 
+        aimed at making a real impact in my community.
+      </p>
+      <p>
+        Alongside data analysis, I have experience in software development with <strong>HTML</strong>, <strong>CSS</strong>, 
+        and <strong>Flask</strong>, which enables me to build interactive web applications that deliver 
+        data-driven insights in a practical, user-friendly way.
+      </p>
+      <p>
+        I am motivated by the potential of data and technology to create solutions and change, 
+        and I am currently exploring ways to expand my impact through innovative projects and collaborations.
+      </p>
+      <div class="contact-info">
+        <p><strong>📍 Location:</strong> Mombasa, Kenya</p>
+        <p><strong>📧 Email:</strong> mwangolo@fred@gmail.com</p>
+      </div>
+    </div>
+    <div class="about-image">
+      <img src="fred1.png" alt="Mwangolo Fredrick Karimah" />
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mwangolo Fredrick Karimah. All rights reserved.</p>
+    <div class="social-links">
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const aboutText = document.querySelector(".about-text");
+
+      const revealOnScroll = () => {
+        const rect = aboutText.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          aboutText.classList.add("visible");
+        }
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+    });
+  </script>
+</body>
+</html>

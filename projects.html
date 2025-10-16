@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    body {
-      background-color: #f8f9fa;
+    :root {
+      --primary-color: #7e37d7;
+      --secondary-color: #00aeff;
+      --background-color: #1a1a2e;
+      --text-color: #e0e0e0;
     }
+
+    body {
+      background-color: var(--background-color);
+      color: var(--text-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding-top: 70px; /* offset for fixed navbar */
+    }
+
+    .navbar {
+      background: rgba(26, 26, 46, 0.9);
+      backdrop-filter: blur(8px);
+    }
+
+    .navbar-brand, 
+    .nav-link {
+      color: var(--text-color) !important;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover,
+    .navbar-brand:hover {
+      color: var(--primary-color) !important;
+    }
+
+    h2 {
+      color: var(--secondary-color);
+      margin-bottom: 2rem;
+    }
+
     .project-card {
+      background-color: #24243a;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       transition: all 0.3s ease;
       height: 100%;
     }
+
     .project-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.5);
     }
+
     .project-image {
       width: 100%;
       height: 180px;
@@ -26,91 +61,153 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
     }
+
     .tech-tags span {
       margin-right: 6px;
       margin-top: 5px;
     }
+
+    .btn-outline-dark {
+      border: 2px solid var(--primary-color);
+      color: var(--primary-color);
+      background: transparent;
+    }
+
+    .btn-outline-dark:hover {
+      background: var(--primary-color);
+      color: #fff;
+    }
+
+    footer {
+      background: #111;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 3rem;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--primary-color);
+    }
+
+    /* make navbar horizontal with spacing */
+    .navbar-nav {
+      flex-direction: row;
+      gap: 20px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <header>
+     <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/">My Portfolio</a>
+      <a class="navbar-brand fw-bold" href="#">Projects</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" href="/projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a></li>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <div class="container my-5">
-    <h2 class="mb-4 text-center fw-bold">My Data Science & Tech Projects</h2>
-    <div class="row g-4">
-
-      <!-- Project 1 -->
+  </nav>
+      <!-- Project Card 1 -->
       <div class="col-md-4">
-        <div class="card project-card">
-          <img src="telemed.png" class="project-image" alt="TeleMED">
-          <div class="card-body">
-            <h5 class="card-title">TeleMED</h5>
-            <div class="tech-tags">
-              <span class="badge bg-primary">Python (Flask)</span>
-              <span class="badge bg-secondary">SQL/MySQL</span>
-              <span class="badge bg-success">HTML</span>
-              <span class="badge bg-info text-dark">CSS & JS</span>
+        <div class="project-card">
+          <img src="telemed.png" alt="Project Screenshot" class="project-image">
+          <div class="p-3">
+            <h5 class="fw-bold">TeleMed Platform</h5>
+            <p>A telemedicine web app that connects patients with doctors and caregivers for chronic disease management.</p>
+            <div class="tech-tags d-flex flex-wrap">
+              <span class="badge bg-secondary">Flask</span>
+              <span class="badge bg-secondary">MySQL</span>
+              <span class="badge bg-secondary">Bootstrap</span>
             </div>
-            <p class="card-text mt-2">A post-diagnosis companion for CKD patients with daily monitoring & AI health insights.</p>
-            <a href="https://github.com/YourGitHubUsername/TeleMED" target="_blank" class="btn btn-outline-dark btn-sm">View on GitHub</a>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
           </div>
         </div>
       </div>
 
-      <!-- Project 2 -->
+      <!-- Project Card 2 -->
       <div class="col-md-4">
-        <div class="card project-card">
-        
-          <div class="card-body">
-            <h5 class="card-title">Bulldozer Price Prediction</h5>
-            <div class="tech-tags">
-              <span class="badge bg-primary">Python</span>
-              <span class="badge bg-warning text-dark">Numpy</span>
-              <span class="badge bg-info text-dark">Matplotlib</span>
-            </div>
-            <p class="card-text mt-2">Machine learning regression model predicting heavy equipment auction prices.</p>
-            <a href="https://github.com/YourGitHubUsername/Bulldozer-ML" target="_blank" class="btn btn-outline-dark btn-sm">View on GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Project 3 -->
-      <div class="col-md-4">
-        <div class="card project-card">
-          <img src="hr dashboard.png" class="project-image" alt="HR Dashboard">
-          <div class="card-body">
-            <h5 class="card-title">HR Analytics Dashboard</h5>
-            <div class="tech-tags">
-              <span class="badge bg-primary">Power BI</span>
+        <div class="project-card">
+          <img src="hr dashboard.png" alt="Project Screenshot" class="project-image">
+          <div class="p-3">
+            <h5 class="fw-bold">Mwangolo and Son's HR Analytics Dashboard</h5>
+            <p>An interactive Power BI dashboard that visualizes job satisfaction, attrition rate, and performance insights.</p>
+            <div class="tech-tags d-flex flex-wrap">
+              <span class="badge bg-secondary">Power BI</span>
               <span class="badge bg-secondary">Excel</span>
-              <span class="badge bg-success">Data Analytics</span>
+              <span class="badge bg-secondary">Analytics</span>
             </div>
-            <p class="card-text mt-2">Interactive HR dashboard providing workforce insights and retrenchment trends.</p>
-            <a href="https://github.com/YourGitHubUsername/HR-Analytics-Dashboard" target="_blank" class="btn btn-outline-dark btn-sm">View on GitHub</a>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="hr dashboard.png" alt="Project Screenshot" class="project-image">
+          <div class="p-3">
+            <h5 class="fw-bold">BakeHUB</h5>
+            <p>A modern and responsive online store built with Django and integrated payment options.</p>
+            <div class="tech-tags d-flex flex-wrap">
+              <span class="badge bg-secondary">Django/Flask</span>
+              <span class="badge bg-secondary">HTML</span>
+              <span class="badge bg-secondary">CSS</span>
+            </div>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
           </div>
         </div>
       </div>
 
     </div>
-  </div>
 
-  <footer class="bg-dark text-center text-white py-3">
-    <p class="mb-0">© 2025 Your Name | <a href="https://github.com/Karim08F" class="text-white" target="_blank">GitHub</a></p>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mwangolo Fredrick. All Rights Reserved. 
   </footer>
+
+  <script>
+    // Preview uploaded screenshot
+    const screenshotInput = document.getElementById('screenshotInput');
+    const previewImage = document.getElementById('previewImage');
+
+    screenshotInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        previewImage.src = URL.createObjectURL(file);
+        previewImage.style.display = 'block';
+      }
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -222,7 +222,11 @@
         <p>Data Scientist · Business Analyst · Graphic Designer</p>
         <p class="location">Based in Mombasa, Kenya</p>
         <div class="hero-buttons">
-          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="mailto:freddiekarimah@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Fredrick,%20I'm%20interested%20in%20working%20with%20you." 
+   class="btn btn-primary">
+  Hire Me
+</a>
+
           <a href="https://www.datascienceportfol.io/MwangoloFredrick" 
             target="_blank" class="btn btn-secondary">
             View Projects
@@ -255,21 +259,6 @@
         });
       });
     });
-  
-  document.getElementById('hireMeBtn').addEventListener('click', function (e) {
-    e.preventDefault();
-    
-    const name = prompt("Please enter your name:");
-    if (name) {
-      const subject = encodeURIComponent("Portfolio Inquiry");
-      const body = encodeURIComponent(`Hi ${name},\n\nThank you for reaching out to me! Please write your message below:\n\n`);
-      const mailtoLink = `mailto:freddiekarimah@gmail.com?subject=${subject}&body=${body}`;
-      
-      window.location.href = mailtoLink;
-    }
-  });
-
-
   </script>
 </body>
 </html>

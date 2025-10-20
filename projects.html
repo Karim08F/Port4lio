@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
+  <title>projects - mwangolo fredrick karimah</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     :root {
@@ -29,18 +29,30 @@
     .nav-link {
       color: var(--text-color) !important;
       transition: 0.3s;
+      text-transform: lowercase; /* ✅ lowercase nav */
     }
 
     .nav-link:hover,
-    .navbar-brand:hover {
+    .navbar-brand:hover,
+    .nav-link.active {
       color: var(--primary-color) !important;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
     }
 
     h2 {
       color: var(--secondary-color);
       margin-bottom: 2rem;
+      text-transform: lowercase;
     }
 
+    
     .project-card {
       background-color: #24243a;
       border-radius: 10px;
@@ -73,6 +85,7 @@
       border: 2px solid var(--primary-color);
       color: var(--primary-color);
       background: transparent;
+      text-transform: lowercase;
     }
 
     .btn-outline-dark:hover {
@@ -80,12 +93,14 @@
       color: #fff;
     }
 
+   
     footer {
       background: #111;
       padding: 1.5rem;
       text-align: center;
       margin-top: 3rem;
       border-top: 1px solid #333;
+      text-transform: lowercase;
     }
 
     footer a {
@@ -97,7 +112,7 @@
       color: var(--primary-color);
     }
 
-    /* Navbar horizontal layout */
+    /* Navbar layout */
     .navbar-nav {
       flex-direction: row;
       gap: 20px;
@@ -119,43 +134,42 @@
 <body>
 
   <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Projects</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link" href="skills.html">Skills & Education</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">projects</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="home.html">home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">skills & education</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">about</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
- 
   <!-- Projects Section -->
   <section class="container py-5">
-    <h2 class="text-center">My Projects</h2>
+    <h2 class="text-center">my projects</h2>
     <div class="row g-4 justify-content-center">
 
       <!-- Project Card 1 -->
       <div class="col-md-4 col-sm-6 col-12 d-flex">
         <div class="project-card flex-fill">
-          <img src="telemed.png" alt="Project Screenshot" class="project-image">
+          <img src="telemed.png" alt="TeleMed Project Screenshot" class="project-image">
           <div class="p-3">
-            <h5 class="fw-bold">TeleMed Platform</h5>
+            <h5 class="fw-bold">TeleMed platform</h5>
             <p>A telemedicine web app that connects patients with doctors and caregivers for chronic disease management.</p>
             <div class="tech-tags d-flex flex-wrap">
               <span class="badge bg-secondary">Flask</span>
               <span class="badge bg-secondary">MySQL</span>
               <span class="badge bg-secondary">Bootstrap</span>
             </div>
-            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">view project</a>
           </div>
         </div>
       </div>
@@ -163,16 +177,16 @@
       <!-- Project Card 2 -->
       <div class="col-md-4 col-sm-6 col-12 d-flex">
         <div class="project-card flex-fill">
-          <img src="hr dashboard.png" alt="Project Screenshot" class="project-image">
+          <img src="hr dashboard.png" alt="HR Dashboard Screenshot" class="project-image">
           <div class="p-3">
-            <h5 class="fw-bold">Mwangolo and Son's HR Analytics Dashboard</h5>
+            <h5 class="fw-bold">HR analytics dashboard</h5>
             <p>An interactive Power BI dashboard that visualizes job satisfaction, attrition rate, and performance insights.</p>
             <div class="tech-tags d-flex flex-wrap">
               <span class="badge bg-secondary">Power BI</span>
               <span class="badge bg-secondary">Excel</span>
               <span class="badge bg-secondary">Analytics</span>
             </div>
-            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">view project</a>
           </div>
         </div>
       </div>
@@ -180,7 +194,7 @@
       <!-- Project Card 3 -->
       <div class="col-md-4 col-sm-6 col-12 d-flex">
         <div class="project-card flex-fill">
-          <img src="bakehub.png" alt="Project Screenshot" class="project-image">
+          <img src="bakehub.png" alt="BakeHUB Project Screenshot" class="project-image">
           <div class="p-3">
             <h5 class="fw-bold">BakeHUB</h5>
             <p>A modern and responsive online store built with Django and integrated payment options.</p>
@@ -189,7 +203,7 @@
               <span class="badge bg-secondary">HTML</span>
               <span class="badge bg-secondary">CSS</span>
             </div>
-            <a href="#" class="btn btn-outline-dark mt-3 w-100">View Project</a>
+            <a href="#" class="btn btn-outline-dark mt-3 w-100">view project</a>
           </div>
         </div>
       </div>
@@ -199,23 +213,8 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Mwangolo Fredrick. All Rights Reserved.</p>
+    <p>&copy; 2025 mwangolo fredrick karimah. all rights reserved.</p>
   </footer>
-
-  <!-- Optional Screenshot Preview -->
-  <script>
-    const screenshotInput = document.getElementById('screenshotInput');
-    const previewImage = document.getElementById('previewImage');
-    if (screenshotInput && previewImage) {
-      screenshotInput.addEventListener('change', (event) => {
-        const file = event.target.files[0];
-        if (file) {
-          previewImage.src = URL.createObjectURL(file);
-          previewImage.style.display = 'block';
-        }
-      });
-    }
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

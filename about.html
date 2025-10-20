@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About - Mwangolo Fredrick Karimah</title>
   <style>
-    /* ================= Variables ================= */
+    
     :root {
       --primary-color: #7e37d7;
       --secondary-color: #00aeff;
@@ -28,7 +28,6 @@
       color: var(--text-color);
     }
 
-    /* ================= Navbar ================= */
     header {
       background-color: rgba(26, 26, 46, 0.8);
       padding: 1rem 0;
@@ -51,6 +50,7 @@
       font-size: 1.5rem;
       font-weight: bold;
       color: var(--primary-color);
+      text-transform: lowercase;
     }
 
     nav ul {
@@ -67,6 +67,7 @@
     nav ul li a {
       color: var(--text-color);
       transition: color 0.3s ease;
+      text-transform: lowercase; 
     }
 
     nav ul li a:hover,
@@ -74,7 +75,7 @@
       color: var(--primary-color);
     }
 
-    /* ================= About Section ================= */
+   
     .about-split {
       display: flex;
       align-items: center;
@@ -137,7 +138,7 @@
       filter: grayscale(0%);
     }
 
-    /* ================= Footer ================= */
+   
     footer {
       text-align: center;
       padding: 2rem 0;
@@ -154,6 +155,7 @@
       margin: 0 10px;
       font-size: 1.2rem;
       transition: color 0.3s ease;
+      text-transform: lowercase;
     }
 
     .social-links a:hover {
@@ -179,13 +181,13 @@
   <!-- Header / Navbar -->
   <header>
     <nav>
-      <div class="logo">Mwangolo.</div>
+      <div class="logo">mwangolo.</div>
       <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="skills.html">Skills&Education</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="home.html">home</a></li>
+        <li><a href="about.html" class="active">about</a></li>
+        <li><a href="skills.html">skills & education</a></li>
+        <li><a href="projects.html">projects</a></li>
+        <li><a href="contact.html">contact</a></li>
       </ul>
     </nav>
   </header>
@@ -214,8 +216,8 @@
         and I am currently exploring ways to expand my impact through innovative projects and collaborations.
       </p>
       <div class="contact-info">
-        <p><strong>📍 Location:</strong> Mombasa, Kenya</p>
-        <p><strong>📧 Email:</strong> mwangolo@fred@gmail.com</p>
+        <p><strong>location:</strong> Mombasa, Kenya</p>
+        <p><strong>email:</strong> freddiekarimah@gmail.com</p>
       </div>
     </div>
     <div class="about-image">
@@ -226,14 +228,13 @@
   <footer>
     <p>&copy; 2025 Mwangolo Fredrick Karimah. All rights reserved.</p>
     <div class="social-links">
-      <a href="#">LinkedIn</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
+      <a href="#">linkedin</a>
+      <a href="#">github</a>
+      <a href="#">twitter</a>
     </div>
   </footer>
 
   <script>
-    
     document.addEventListener("DOMContentLoaded", () => {
       const aboutText = document.querySelector(".about-text");
 

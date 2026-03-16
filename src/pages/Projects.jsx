@@ -3,8 +3,9 @@ import telemedImg from '../assets/images/telemed.png';
 import hrImg from '../assets/images/hr dashboard.png';
 import bakehubImg from '../assets/images/bakehub.png';
 import keishaImg from '../assets/images/Keisha-2.jpg';
-import analyticsImg from '../assets/images/Screenshot 2026-03-08 165817.png';
-import techImg from '../assets/images/tech.jpeg';
+import ba1Img from '../assets/images/business Analysis1.png';
+import ba2Img from '../assets/images/business Analysis2.png';
+import ba3Img from '../assets/images/business Analysis3.png';
 
 const Projects = () => {
     const projectsData = [
@@ -19,8 +20,8 @@ const Projects = () => {
         {
             title: 'HR Analytics Dashboard',
             category: 'Data Visualization',
-            description: 'Advanced Power BI suite focusing on workforce retention metrics, satisfaction tracking, and performance ROI.',
-            image: hrImg,
+            description: 'A data-driven HR ecosystem designed to optimize workforce management. It tracks key metrics like retention, employee performance, and recruitment ROI, providing a clear roadmap for organizational growth.',
+            image: ba1Img,
             tags: ['Power BI', 'DAX', 'Excel'],
             link: '#',
         },
@@ -41,18 +42,18 @@ const Projects = () => {
             link: '#',
         },
         {
-            title: 'Strategic Business Intelligence',
+            title: 'Strategic Business Analysis',
             category: 'Data Analysis',
-            description: 'A complex data analysis project visualizing key performance indicators and market trends to drive executive decision-making.',
-            image: analyticsImg,
+            description: 'Executive-level reporting suite that translates raw financial and operational data into strategic insights. Features real-time KPI monitoring and predictive modeling to mitigate risks and maximize market opportunities.',
+            image: ba2Img,
             tags: ['SQL', 'Python', 'Power BI'],
             link: '#',
         },
         {
-            title: 'Financial Trend Analytics',
+            title: 'Market Performance Intelligence',
             category: 'Data Science',
-            description: 'Predicting market shifts using historical price data and advanced econometric models for investment optimization.',
-            image: techImg,
+            description: 'Comprehensive market analysis platform focusing on customer behavior patterns and sales efficiency. It identifies high-value segments and optimizes resource allocation across multi-channel campaigns.',
+            image: ba3Img,
             tags: ['Python', 'NumPy', 'Pandas'],
             link: '#',
         },

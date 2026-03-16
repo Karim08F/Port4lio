@@ -70,9 +70,6 @@ const Contact = () => {
                             <div className="glass-card p-4 mt-4 fade-in">
                                 <h5 className="mb-3 text-white">Follow Me</h5>
                                 <div className="d-flex gap-3">
-                                    <a href="https://mwangolo-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="Website">
-                                        <i className="fas fa-globe"></i>
-                                    </a>
                                     <a href="https://www.linkedin.com/in/mwangolo-fredrick-8715b2253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LinkedIn">
                                         <i className="fab fa-linkedin"></i>
                                     </a>

@@ -66,6 +66,24 @@ const Contact = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="glass-card p-4 mt-4 fade-in">
+                                <h5 className="mb-3 text-white">Follow Me</h5>
+                                <div className="d-flex gap-3">
+                                    <a href="https://mwangolo-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="Website">
+                                        <i className="fas fa-globe"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/mwangolo-fredrick-8715b2253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="LinkedIn">
+                                        <i className="fab fa-linkedin"></i>
+                                    </a>
+                                    <a href="https://github.com/Karim08F" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="GitHub">
+                                        <i className="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://x.com/karimfred08" target="_blank" rel="noopener noreferrer" className="social-icon-btn" title="Twitter">
+                                        <i className="fab fa-x-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -199,6 +217,28 @@ const Contact = () => {
           font-size: 4rem;
           color: var(--secondary-color);
           filter: drop-shadow(0 0 15px var(--secondary-glow));
+        }
+
+        .social-icon-btn {
+          width: 40px;
+          height: 40px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid var(--glass-border);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--text-muted);
+          transition: 0.3s;
+          font-size: 1.1rem;
+        }
+
+        .social-icon-btn:hover {
+          background: var(--grad-primary);
+          color: white;
+          border-color: transparent;
+          transform: translateY(-3px);
+          box-shadow: 0 5px 15px var(--primary-glow);
         }
 
         @media (max-width: 992px) {

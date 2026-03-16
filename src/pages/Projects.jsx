@@ -2,6 +2,9 @@ import React from 'react';
 import telemedImg from '../assets/images/telemed.png';
 import hrImg from '../assets/images/hr dashboard.png';
 import bakehubImg from '../assets/images/bakehub.png';
+import keishaImg from '../assets/images/Keisha-2.jpg';
+import analyticsImg from '../assets/images/Screenshot 2026-03-08 165817.png';
+import techImg from '../assets/images/tech.jpeg';
 
 const Projects = () => {
     const projectsData = [
@@ -27,6 +30,30 @@ const Projects = () => {
             description: 'Full-stack online bakery store featuring secure payments, order tracking, and inventory management.',
             image: bakehubImg,
             tags: ['Django', 'Python', 'PostgreSQL'],
+            link: '#',
+        },
+        {
+            title: 'Keisha Homes Real Estate',
+            category: 'Web Development / Real Estate',
+            description: 'A premium property listing platform featuring interactive maps, high-quality image galleries, and a seamless booking experience.',
+            image: keishaImg,
+            tags: ['React', 'Node.js', 'CSS Grid'],
+            link: '#',
+        },
+        {
+            title: 'Strategic Business Intelligence',
+            category: 'Data Analysis',
+            description: 'A complex data analysis project visualizing key performance indicators and market trends to drive executive decision-making.',
+            image: analyticsImg,
+            tags: ['SQL', 'Python', 'Power BI'],
+            link: '#',
+        },
+        {
+            title: 'Financial Trend Analytics',
+            category: 'Data Science',
+            description: 'Predicting market shifts using historical price data and advanced econometric models for investment optimization.',
+            image: techImg,
+            tags: ['Python', 'NumPy', 'Pandas'],
             link: '#',
         },
     ];

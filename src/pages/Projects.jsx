@@ -20,9 +20,9 @@ const Projects = () => {
         {
             title: 'HR Analytics Dashboard',
             category: 'Data Visualization',
-            description: 'A data-driven HR ecosystem designed to optimize workforce management. It tracks key metrics like retention, employee performance, and recruitment ROI, providing a clear roadmap for organizational growth.',
+            description: 'Developed an end-to-end People Analytics ecosystem using Power BI and SQL. This platform identifies high-risk turnover zones and has successfully informed retention strategies that reduced churn by 12% through data-backed recruitment optimization.',
             image: ba1Img,
-            tags: ['Power BI', 'DAX', 'Excel'],
+            tags: ['Power BI', 'SQL', 'DAX'],
             link: '#',
         },
         {
@@ -44,7 +44,7 @@ const Projects = () => {
         {
             title: 'Strategic Business Analysis',
             category: 'Data Analysis',
-            description: 'Executive-level reporting suite that translates raw financial and operational data into strategic insights. Features real-time KPI monitoring and predictive modeling to mitigate risks and maximize market opportunities.',
+            description: 'Executive-level reporting suite that translates raw financial and operational data into strategic insights. Features real-time KPI monitoring, budget forecasting, and predictive modeling using Python to mitigate risks and maximize market opportunities.',
             image: ba2Img,
             tags: ['SQL', 'Python', 'Power BI'],
             link: '#',
@@ -52,7 +52,7 @@ const Projects = () => {
         {
             title: 'Market Performance Intelligence',
             category: 'Data Science',
-            description: 'Comprehensive market analysis platform focusing on customer behavior patterns and sales efficiency. It identifies high-value segments and optimizes resource allocation across multi-channel campaigns.',
+            description: 'Comprehensive market analysis platform focusing on customer behavior patterns and sales efficiency. Leveraged Pandas and Scikit-learn to identifying high-value segments and optimize resource allocation across multi-channel campaigns.',
             image: ba3Img,
             tags: ['Python', 'NumPy', 'Pandas'],
             link: '#',

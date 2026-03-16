@@ -399,6 +399,15 @@ const Home = () => {
             font-weight: 800;
             margin-bottom: 1.5rem;
           }
+          @media (max-width: 768px) {
+            .section-title { font-size: 2rem; }
+            .featured-img-wrapper { height: 180px; }
+            .featured-card p { 
+              font-size: 0.9rem !important; 
+              color: #f1f5f9 !important; /* Brighter white for high contrast */
+              line-height: 1.6;
+            }
+          }
         `}</style>
       </section>
     </>

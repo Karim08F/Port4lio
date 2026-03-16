@@ -244,6 +244,16 @@ const Projects = () => {
           color: white;
           transform: scale(1.1);
         }
+        @media (max-width: 768px) {
+          .section-title { font-size: 2rem; }
+          .project-image-wrapper { height: 180px; }
+          .project-description { 
+            font-size: 0.9rem !important; 
+            color: #f1f5f9 !important; /* Brighter white for high contrast */
+            line-height: 1.6;
+          }
+          .project-title { font-size: 1.25rem; }
+        }
       `}</style>
         </section>
     );
